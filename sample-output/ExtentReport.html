@@ -1,0 +1,3328 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 4, 2026 01:55:21 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">regression</a><a class="dropdown-item" href="#">ui</a><a class="dropdown-item" href="#">negative</a><a class="dropdown-item" href="#">api</a><a class="dropdown-item" href="#">smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="smoke ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckoutTest.completePurchase</p>
+            <p class="text-sm">
+              <span>1:55:21 PM</span> / <span>00:00:05:641</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CheckoutTest.completePurchase</h5>
+<span class='badge badge-success'>10.04.2026 1:55:21 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:27 PM</span>
+<span class='badge badge-default'>00:00:05:641</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">End-to-end purchase from login to order confirmation</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:21 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:25 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:25 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Add 'Sauce Labs Bike Light' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Click Checkout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Enter customer details: John Doe, 560001
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Click Finish
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:27 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="regression ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.logout</p>
+            <p class="text-sm">
+              <span>1:55:21 PM</span> / <span>00:00:05:230</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.logout</h5>
+<span class='badge badge-success'>10.04.2026 1:55:21 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:26 PM</span>
+<span class='badge badge-default'>00:00:05:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">User can log out</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:21 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:25 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:25 PM</td>
+        <td>
+          Logout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:26 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckoutTest.checkoutWithMissingDetails [Missing first name]</p>
+            <p class="text-sm">
+              <span>1:55:50 PM</span> / <span>00:00:06:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CheckoutTest.checkoutWithMissingDetails [Missing first name]</h5>
+<span class='badge badge-success'>10.04.2026 1:55:50 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:56 PM</span>
+<span class='badge badge-default'>00:00:06:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Checkout shows an error when a required customer field is empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:50 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Click Checkout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Enter customer details:  Doe, 560001
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Locked out user]</p>
+            <p class="text-sm">
+              <span>1:55:52 PM</span> / <span>00:00:04:392</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Locked out user]</h5>
+<span class='badge badge-success'>10.04.2026 1:55:52 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:56 PM</span>
+<span class='badge badge-default'>00:00:04:392</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:52 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Login with username 'locked_out_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.productsPageNeedsLogin</p>
+            <p class="text-sm">
+              <span>1:55:56 PM</span> / <span>00:00:01:183</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.productsPageNeedsLogin</h5>
+<span class='badge badge-success'>10.04.2026 1:55:56 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:57 PM</span>
+<span class='badge badge-default'>00:00:01:183</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Products page cannot be opened without logging in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:57 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Wrong password]</p>
+            <p class="text-sm">
+              <span>1:55:57 PM</span> / <span>00:00:01:085</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Wrong password]</h5>
+<span class='badge badge-success'>10.04.2026 1:55:57 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:58 PM</span>
+<span class='badge badge-default'>00:00:01:085</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:57 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:58 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:58 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="smoke ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.validLogin</p>
+            <p class="text-sm">
+              <span>1:55:57 PM</span> / <span>00:00:01:738</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.validLogin</h5>
+<span class='badge badge-success'>10.04.2026 1:55:57 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:55:59 PM</span>
+<span class='badge badge-default'>00:00:01:738</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Valid user logs in and sees the Products page</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:57 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckoutTest.checkoutWithMissingDetails [Missing last name]</p>
+            <p class="text-sm">
+              <span>1:55:57 PM</span> / <span>00:00:03:039</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CheckoutTest.checkoutWithMissingDetails [Missing last name]</h5>
+<span class='badge badge-success'>10.04.2026 1:55:57 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:00 PM</span>
+<span class='badge badge-default'>00:00:03:039</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Checkout shows an error when a required customer field is empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:57 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Click Checkout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:00 PM</td>
+        <td>
+          Enter customer details: John , 560001
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:00 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="regression ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CartTest.addAndRemoveOnProductsPage</p>
+            <p class="text-sm">
+              <span>1:55:58 PM</span> / <span>00:00:01:762</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CartTest.addAndRemoveOnProductsPage</h5>
+<span class='badge badge-success'>10.04.2026 1:55:58 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:00 PM</span>
+<span class='badge badge-default'>00:00:01:762</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Add button changes to Remove and back; badge disappears at 0</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:58 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Remove 'Sauce Labs Backpack' from cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:00 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Unknown user]</p>
+            <p class="text-sm">
+              <span>1:55:59 PM</span> / <span>00:00:02:477</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Unknown user]</h5>
+<span class='badge badge-success'>10.04.2026 1:55:59 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:01 PM</span>
+<span class='badge badge-default'>00:00:02:477</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:01 PM</td>
+        <td>
+          Login with username 'unknown_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:01 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="regression ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CartTest.cartShowsAddedProducts</p>
+            <p class="text-sm">
+              <span>1:56:00 PM</span> / <span>00:00:02:335</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CartTest.cartShowsAddedProducts</h5>
+<span class='badge badge-success'>10.04.2026 1:56:00 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:02 PM</span>
+<span class='badge badge-default'>00:00:02:335</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Cart shows the added products with correct name, price and quantity</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:00 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Add 'Sauce Labs Bike Light' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="regression ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CartTest.removeProductFromCart</p>
+            <p class="text-sm">
+              <span>1:56:00 PM</span> / <span>00:00:02:760</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CartTest.removeProductFromCart</h5>
+<span class='badge badge-success'>10.04.2026 1:56:00 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:03 PM</span>
+<span class='badge badge-default'>00:00:02:760</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Removing a product from the cart updates the cart and badge</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:00 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Add 'Sauce Labs Bike Light' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Remove 'Sauce Labs Bike Light' from cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckoutTest.checkoutWithMissingDetails [Missing postal code]</p>
+            <p class="text-sm">
+              <span>1:56:01 PM</span> / <span>00:00:01:920</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CheckoutTest.checkoutWithMissingDetails [Missing postal code]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:01 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:03 PM</span>
+<span class='badge badge-default'>00:00:01:920</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Checkout shows an error when a required customer field is empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:01 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Click Checkout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Enter customer details: John Doe, 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Empty username]</p>
+            <p class="text-sm">
+              <span>1:56:02 PM</span> / <span>00:00:01:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Empty username]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:02 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:03 PM</span>
+<span class='badge badge-default'>00:00:01:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:02 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Login with username ''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:03 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Empty password]</p>
+            <p class="text-sm">
+              <span>1:56:04 PM</span> / <span>00:00:01:728</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Empty password]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:04 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:06 PM</span>
+<span class='badge badge-default'>00:00:01:728</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:04 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:05 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">CheckoutTest.checkoutWithMissingDetails [All fields empty]</p>
+            <p class="text-sm">
+              <span>1:56:04 PM</span> / <span>00:00:02:703</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CheckoutTest.checkoutWithMissingDetails [All fields empty]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:04 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-default'>00:00:02:703</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Checkout shows an error when a required customer field is empty</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:04 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Login with username 'standard_user'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Add 'Sauce Labs Backpack' to cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Open cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Click Checkout
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Enter customer details:  , 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:07 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="negative ui"
+          device="">
+          <div class="test-detail">
+            <p class="name">LoginTest.invalidLogin [Username wrong case]</p>
+            <p class="text-sm">
+              <span>1:56:06 PM</span> / <span>00:00:00:934</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LoginTest.invalidLogin [Username wrong case]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:06 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-default'>00:00:00:934</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">negative</span>
+<span class="badge badge-pill badge-default">ui</span></div>
+<div class="m-t-10 m-l-5">Wrong, locked or empty credentials show an error and do not log in</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Open https://www.saucedemo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:07 PM</td>
+        <td>
+          Login with username 'STANDARD_USER'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:07 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="api smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.getBookingById</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:02:073</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.getBookingById</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-default'>00:00:02:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">GET /booking/{id} returns the booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:09 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="19"
+          author=""
+          tag="api regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.deleteBooking</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:00:088</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">BookingApiTest.deleteBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-default'>00:00:00:088</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">DELETE /booking/{id} with a token deletes the booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:56:07 PM</td>
+        <td>
+          Failed - retried
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="20"
+          author=""
+          tag="api smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.createBooking</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:00:087</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">BookingApiTest.createBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-default'>00:00:00:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">POST /booking creates a booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:56:07 PM</td>
+        <td>
+          Failed - retried
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag="api regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.getAllBookings</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:01:717</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.getAllBookings</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-default'>00:00:01:717</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">GET /booking returns a list of booking ids</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:09 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag="api smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.createBooking</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:01:271</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.createBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-default'>00:00:01:271</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">POST /booking creates a booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:09 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="api regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.deleteBooking</p>
+            <p class="text-sm">
+              <span>1:56:07 PM</span> / <span>00:00:03:476</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.deleteBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:07 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-default'>00:00:03:476</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">DELETE /booking/{id} with a token deletes the booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:11 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="api regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.partialUpdateBooking</p>
+            <p class="text-sm">
+              <span>1:56:09 PM</span> / <span>00:00:02:461</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.partialUpdateBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-default'>00:00:02:461</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PATCH /booking/{id} changes only the fields that are sent</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:11 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="api regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingApiTest.updateBooking</p>
+            <p class="text-sm">
+              <span>1:56:09 PM</span> / <span>00:00:04:216</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingApiTest.updateBooking</h5>
+<span class='badge badge-success'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-default'>00:00:04:216</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-10 m-l-5">PUT /booking/{id} with a token updates the whole booking</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:13 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.createBookingWithInvalidJson</p>
+            <p class="text-sm">
+              <span>1:56:09 PM</span> / <span>00:00:00:748</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.createBookingWithInvalidJson</h5>
+<span class='badge badge-success'>10.04.2026 1:56:09 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:10 PM</span>
+<span class='badge badge-default'>00:00:00:748</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">POST with broken JSON returns 400 Bad Request</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:10 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.createBookingWithMissingFields [Empty body]</p>
+            <p class="text-sm">
+              <span>1:56:10 PM</span> / <span>00:00:00:737</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.createBookingWithMissingFields [Empty body]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:10 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-default'>00:00:00:737</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">POST with missing required fields is rejected</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:11 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]</p>
+            <p class="text-sm">
+              <span>1:56:11 PM</span> / <span>00:00:02:368</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-default'>00:00:02:368</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">DELETE with an invalid token is forbidden (403) and the booking still exists</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:13 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.createBookingWithMissingFields [Only first name]</p>
+            <p class="text-sm">
+              <span>1:56:11 PM</span> / <span>00:00:00:767</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.createBookingWithMissingFields [Only first name]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-default'>00:00:00:767</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">POST with missing required fields is rejected</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:12 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.getBookingWithInvalidId [999999999]</p>
+            <p class="text-sm">
+              <span>1:56:11 PM</span> / <span>00:00:00:754</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.getBookingWithInvalidId [999999999]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:11 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-default'>00:00:00:754</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">GET with an id that does not exist returns 404</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:12 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]</p>
+            <p class="text-sm">
+              <span>1:56:12 PM</span> / <span>00:00:00:742</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-default'>00:00:00:742</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">POST with missing required fields is rejected</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:12 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.getBookingWithInvalidId [0]</p>
+            <p class="text-sm">
+              <span>1:56:12 PM</span> / <span>00:00:00:837</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.getBookingWithInvalidId [0]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-default'>00:00:00:837</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">GET with an id that does not exist returns 404</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:13 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]</p>
+            <p class="text-sm">
+              <span>1:56:12 PM</span> / <span>00:00:01:750</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:12 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-default'>00:00:01:750</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">PUT with an invalid token is forbidden (403)</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:14 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.getBookingWithInvalidId [-1]</p>
+            <p class="text-sm">
+              <span>1:56:13 PM</span> / <span>00:00:00:813</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.getBookingWithInvalidId [-1]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-default'>00:00:00:813</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">GET with an id that does not exist returns 404</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:14 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.deleteWithInvalidToken []</p>
+            <p class="text-sm">
+              <span>1:56:13 PM</span> / <span>00:00:02:489</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.deleteWithInvalidToken []</h5>
+<span class='badge badge-success'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:16 PM</span>
+<span class='badge badge-default'>00:00:02:489</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">DELETE with an invalid token is forbidden (403) and the booking still exists</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:16 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">AuthApiTest.createTokenWithInvalidCredentials [Wrong password]</p>
+            <p class="text-sm">
+              <span>1:56:13 PM</span> / <span>00:00:00:893</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AuthApiTest.createTokenWithInvalidCredentials [Wrong password]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:13 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-default'>00:00:00:893</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">Wrong or missing credentials do not return a token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:14 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.getBookingWithInvalidId [abc]</p>
+            <p class="text-sm">
+              <span>1:56:14 PM</span> / <span>00:00:00:864</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.getBookingWithInvalidId [abc]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-default'>00:00:00:864</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">GET with an id that does not exist returns 404</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:14 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">BookingNegativeApiTest.updateWithInvalidToken []</p>
+            <p class="text-sm">
+              <span>1:56:14 PM</span> / <span>00:00:01:596</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookingNegativeApiTest.updateWithInvalidToken []</h5>
+<span class='badge badge-success'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:16 PM</span>
+<span class='badge badge-default'>00:00:01:596</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">PUT with an invalid token is forbidden (403)</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:16 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">AuthApiTest.createTokenWithInvalidCredentials [Unknown user]</p>
+            <p class="text-sm">
+              <span>1:56:14 PM</span> / <span>00:00:00:849</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AuthApiTest.createTokenWithInvalidCredentials [Unknown user]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:15 PM</span>
+<span class='badge badge-default'>00:00:00:849</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">Wrong or missing credentials do not return a token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag="api smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">AuthApiTest.createTokenWithValidCredentials</p>
+            <p class="text-sm">
+              <span>1:56:14 PM</span> / <span>00:00:00:838</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AuthApiTest.createTokenWithValidCredentials</h5>
+<span class='badge badge-success'>10.04.2026 1:56:14 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:15 PM</span>
+<span class='badge badge-default'>00:00:00:838</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+<div class="m-t-10 m-l-5">Valid username and password return a token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">AuthApiTest.createTokenWithInvalidCredentials [Missing password]</p>
+            <p class="text-sm">
+              <span>1:56:15 PM</span> / <span>00:00:00:760</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AuthApiTest.createTokenWithInvalidCredentials [Missing password]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:15 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:16 PM</span>
+<span class='badge badge-default'>00:00:00:760</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">Wrong or missing credentials do not return a token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:16 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag="api negative"
+          device="">
+          <div class="test-detail">
+            <p class="name">AuthApiTest.createTokenWithInvalidCredentials [Empty body]</p>
+            <p class="text-sm">
+              <span>1:56:16 PM</span> / <span>00:00:00:749</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AuthApiTest.createTokenWithInvalidCredentials [Empty body]</h5>
+<span class='badge badge-success'>10.04.2026 1:56:16 PM</span>
+<span class='badge badge-danger'>10.04.2026 1:56:17 PM</span>
+<span class='badge badge-default'>00:00:00:749</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">api</span>
+<span class="badge badge-pill badge-default">negative</span></div>
+<div class="m-t-10 m-l-5">Wrong or missing credentials do not return a token</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:17 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>LoginTest.logout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>CartTest.addAndRemoveOnProductsPage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>CartTest.cartShowsAddedProducts</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>CartTest.removeProductFromCart</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>BookingApiTest.deleteBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>BookingApiTest.getAllBookings</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>BookingApiTest.deleteBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>BookingApiTest.partialUpdateBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>BookingApiTest.updateBooking</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+</span>
+<p class="name">ui</p>
+<p class="duration text-sm">17 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ui</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>LoginTest.logout</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>CheckoutTest.completePurchase</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>CheckoutTest.checkoutWithMissingDetails [Missing first name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>LoginTest.invalidLogin [Locked out user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>LoginTest.productsPageNeedsLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>LoginTest.invalidLogin [Wrong password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>LoginTest.validLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>CheckoutTest.checkoutWithMissingDetails [Missing last name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>CartTest.addAndRemoveOnProductsPage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>LoginTest.invalidLogin [Unknown user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>CartTest.cartShowsAddedProducts</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>CartTest.removeProductFromCart</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>CheckoutTest.checkoutWithMissingDetails [Missing postal code]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>LoginTest.invalidLogin [Empty username]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>LoginTest.invalidLogin [Empty password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>CheckoutTest.checkoutWithMissingDetails [All fields empty]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>LoginTest.invalidLogin [Username wrong case]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>27</span>
+</span>
+<p class="name">negative</p>
+<p class="duration text-sm">27 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>negative</h4>
+<span status="pass" class='badge log pass-bg'>27 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>CheckoutTest.checkoutWithMissingDetails [Missing first name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>LoginTest.invalidLogin [Locked out user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>LoginTest.productsPageNeedsLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>LoginTest.invalidLogin [Wrong password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>CheckoutTest.checkoutWithMissingDetails [Missing last name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>LoginTest.invalidLogin [Unknown user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>CheckoutTest.checkoutWithMissingDetails [Missing postal code]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>LoginTest.invalidLogin [Empty username]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>LoginTest.invalidLogin [Empty password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>CheckoutTest.checkoutWithMissingDetails [All fields empty]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>LoginTest.invalidLogin [Username wrong case]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>BookingNegativeApiTest.createBookingWithInvalidJson</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>BookingNegativeApiTest.createBookingWithMissingFields [Empty body]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>BookingNegativeApiTest.createBookingWithMissingFields [Only first name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>BookingNegativeApiTest.getBookingWithInvalidId [999999999]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>BookingNegativeApiTest.getBookingWithInvalidId [0]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>BookingNegativeApiTest.getBookingWithInvalidId [-1]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>BookingNegativeApiTest.deleteWithInvalidToken []</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>AuthApiTest.createTokenWithInvalidCredentials [Wrong password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>BookingNegativeApiTest.getBookingWithInvalidId [abc]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='38' id='38'>BookingNegativeApiTest.updateWithInvalidToken []</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>AuthApiTest.createTokenWithInvalidCredentials [Unknown user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='41'>AuthApiTest.createTokenWithInvalidCredentials [Missing password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='42'>AuthApiTest.createTokenWithInvalidCredentials [Empty body]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>23</span>
+<span class='badge log badge-skip'>2</span>
+</span>
+<p class="name">api</p>
+<p class="duration text-sm">25 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>api</h4>
+<span status="pass" class='badge log pass-bg'>23 passed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>BookingApiTest.getBookingById</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>BookingApiTest.deleteBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>BookingApiTest.createBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>BookingApiTest.getAllBookings</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>BookingApiTest.createBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>BookingApiTest.deleteBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>BookingApiTest.partialUpdateBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>BookingApiTest.updateBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>BookingNegativeApiTest.createBookingWithInvalidJson</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>BookingNegativeApiTest.createBookingWithMissingFields [Empty body]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>BookingNegativeApiTest.createBookingWithMissingFields [Only first name]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>BookingNegativeApiTest.getBookingWithInvalidId [999999999]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='32' id='32'>BookingNegativeApiTest.getBookingWithInvalidId [0]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>BookingNegativeApiTest.getBookingWithInvalidId [-1]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>BookingNegativeApiTest.deleteWithInvalidToken []</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='36' id='36'>AuthApiTest.createTokenWithInvalidCredentials [Wrong password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='37' id='37'>BookingNegativeApiTest.getBookingWithInvalidId [abc]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='38' id='38'>BookingNegativeApiTest.updateWithInvalidToken []</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='39' id='39'>AuthApiTest.createTokenWithInvalidCredentials [Unknown user]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='40'>AuthApiTest.createTokenWithValidCredentials</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='41' id='41'>AuthApiTest.createTokenWithInvalidCredentials [Missing password]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='42'>AuthApiTest.createTokenWithInvalidCredentials [Empty body]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>CheckoutTest.completePurchase</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:55:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>LoginTest.validLogin</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>BookingApiTest.getBookingById</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>BookingApiTest.createBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>BookingApiTest.createBooking</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:56:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='40'>AuthApiTest.createTokenWithValidCredentials</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 4, 2026 01:55:21 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 4, 2026 01:56:17 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>40</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'>
+<b>40</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>40</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>66</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"CheckoutTest.completePurchase":5.641,"LoginTest.logout":5.23,"CheckoutTest.checkoutWithMissingDetails [Missing first name]":6.065,"LoginTest.invalidLogin [Locked out user]":4.392,"LoginTest.productsPageNeedsLogin":1.183,"LoginTest.invalidLogin [Wrong password]":1.085,"LoginTest.validLogin":1.738,"CheckoutTest.checkoutWithMissingDetails [Missing last name]":3.039,"CartTest.addAndRemoveOnProductsPage":1.762,"LoginTest.invalidLogin [Unknown user]":2.477,"CartTest.cartShowsAddedProducts":2.335,"CartTest.removeProductFromCart":2.76,"CheckoutTest.checkoutWithMissingDetails [Missing postal code]":1.92,"LoginTest.invalidLogin [Empty username]":1.137,"LoginTest.invalidLogin [Empty password]":1.728,"CheckoutTest.checkoutWithMissingDetails [All fields empty]":2.703,"LoginTest.invalidLogin [Username wrong case]":0.934,"BookingApiTest.getBookingById":2.073,"BookingApiTest.deleteBooking":0.088,"BookingApiTest.createBooking":0.087,"BookingApiTest.getAllBookings":1.717,"BookingApiTest.createBooking":1.271,"BookingApiTest.deleteBooking":3.476,"BookingApiTest.partialUpdateBooking":2.461,"BookingApiTest.updateBooking":4.216,"BookingNegativeApiTest.createBookingWithInvalidJson":0.748,"BookingNegativeApiTest.createBookingWithMissingFields [Empty body]":0.737,"BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]":2.368,"BookingNegativeApiTest.createBookingWithMissingFields [Only first name]":0.767,"BookingNegativeApiTest.getBookingWithInvalidId [999999999]":0.754,"BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]":0.742,"BookingNegativeApiTest.getBookingWithInvalidId [0]":0.837,"BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]":1.75,"BookingNegativeApiTest.getBookingWithInvalidId [-1]":0.813,"BookingNegativeApiTest.deleteWithInvalidToken []":2.489,"AuthApiTest.createTokenWithInvalidCredentials [Wrong password]":0.893,"BookingNegativeApiTest.getBookingWithInvalidId [abc]":0.864,"BookingNegativeApiTest.updateWithInvalidToken []":1.596,"AuthApiTest.createTokenWithInvalidCredentials [Unknown user]":0.849,"AuthApiTest.createTokenWithValidCredentials":0.838,"AuthApiTest.createTokenWithInvalidCredentials [Missing password]":0.76,"AuthApiTest.createTokenWithInvalidCredentials [Empty body]":0.749
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>regression</td>
+<td>8</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>88.889%</td>
+</tr>
+<tr>
+<td>ui</td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>negative</td>
+<td>27</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>api</td>
+<td>23</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>83.333%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Environment</td>
+<td>qa</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+<tr>
+<td>UI URL</td>
+<td>https://www.saucedemo.com</td>
+</tr>
+<tr>
+<td>API URL</td>
+<td>https://restful-booker.herokuapp.com</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 40,
+failParent: 0,
+warningParent: 0,
+skipParent: 2,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 40,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 2,
+infoEvents: 64
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

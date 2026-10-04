@@ -1,0 +1,48 @@
+{
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+
+  "invalidLogins": [
+    { "scenario": "Locked out user",   "username": "locked_out_user", "password": "secret_sauce",
+      "expectedError": "Epic sadface: Sorry, this user has been locked out." },
+    { "scenario": "Wrong password",    "username": "standard_user",   "password": "wrong_password",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service" },
+    { "scenario": "Unknown user",      "username": "unknown_user",    "password": "secret_sauce",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service" },
+    { "scenario": "Empty username",    "username": "",                "password": "secret_sauce",
+      "expectedError": "Epic sadface: Username is required" },
+    { "scenario": "Empty password",    "username": "standard_user",   "password": "",
+      "expectedError": "Epic sadface: Password is required" },
+    { "scenario": "Username wrong case", "username": "STANDARD_USER", "password": "secret_sauce",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service" }
+  ],
+
+  "products": ["Sauce Labs Backpack", "Sauce Labs Bike Light"],
+
+  "customer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "560001"
+  },
+
+  "invalidCustomers": [
+    { "scenario": "Missing first name",  "firstName": "",     "lastName": "Doe", "postalCode": "560001",
+      "expectedError": "Error: First Name is required" },
+    { "scenario": "Missing last name",   "firstName": "John", "lastName": "",    "postalCode": "560001",
+      "expectedError": "Error: Last Name is required" },
+    { "scenario": "Missing postal code", "firstName": "John", "lastName": "Doe", "postalCode": "",
+      "expectedError": "Error: Postal Code is required" },
+    { "scenario": "All fields empty",    "firstName": "",     "lastName": "",    "postalCode": "",
+      "expectedError": "Error: First Name is required" }
+  ],
+
+  "order": {
+    "taxRate": 0.08,
+    "paymentInfo": "SauceCard #31337",
+    "shippingInfo": "Free Pony Express Delivery!",
+    "confirmationHeader": "Thank you for your order!",
+    "confirmationMessage": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "booking": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "totalprice": 150,
+    "depositpaid": true,
+    "bookingdates": { "checkin": "2026-11-01", "checkout": "2026-11-05" },
+    "additionalneeds": "Breakfast"
+  },
+
+  "updatedBooking": {
+    "firstname": "John",
+    "lastname": "Smith",
+    "totalprice": 300,
+    "depositpaid": false,
+    "bookingdates": { "checkin": "2026-11-02", "checkout": "2026-11-08" },
+    "additionalneeds": "Dinner"
+  },
+
+  "invalidCredentials": [
+    { "scenario": "Wrong password",   "username": "admin",  "password": "wrong" },
+    { "scenario": "Unknown user",     "username": "nobody", "password": "password123" },
+    { "scenario": "Missing password", "username": "admin" },
+    { "scenario": "Empty body" }
+  ],
+
+  "incompleteBookings": [
+    { "scenario": "Empty body",            "body": {} },
+    { "scenario": "Only first name",       "body": { "firstname": "John" } },
+    { "scenario": "Missing booking dates", "body": { "firstname": "John", "lastname": "Doe", "totalprice": 150, "depositpaid": true } }
+  ]
+}

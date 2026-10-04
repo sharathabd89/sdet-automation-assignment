@@ -1,0 +1,148 @@
+2026-10-04 13:55:21.296 INFO  [TestNG-test-UI Tests-2] TestListener - START: CheckoutTest.completePurchase
+2026-10-04 13:55:21.296 INFO  [TestNG-test-UI Tests-4] TestListener - START: LoginTest.logout
+2026-10-04 13:55:21.367 INFO  [TestNG-test-UI Tests-4] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:21.376 INFO  [TestNG-test-UI Tests-2] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:25.713 INFO  [TestNG-test-UI Tests-2] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:25.760 INFO  [TestNG-test-UI Tests-4] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:25.949 INFO  [TestNG-test-UI Tests-2] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:55:25.962 INFO  [TestNG-test-UI Tests-4] ReportManager - Logout
+2026-10-04 13:55:26.006 INFO  [TestNG-test-UI Tests-2] ReportManager - Add 'Sauce Labs Bike Light' to cart
+2026-10-04 13:55:26.061 INFO  [TestNG-test-UI Tests-2] ReportManager - Open cart
+2026-10-04 13:55:26.110 INFO  [TestNG-test-UI Tests-2] ReportManager - Click Checkout
+2026-10-04 13:55:26.593 INFO  [TestNG-test-UI Tests-4] TestListener - PASS: LoginTest.logout
+2026-10-04 13:55:26.683 INFO  [TestNG-test-UI Tests-2] ReportManager - Enter customer details: John Doe, 560001
+2026-10-04 13:55:26.928 INFO  [TestNG-test-UI Tests-2] ReportManager - Click Finish
+2026-10-04 13:55:27.004 INFO  [TestNG-test-UI Tests-2] TestListener - PASS: CheckoutTest.completePurchase
+2026-10-04 13:55:50.772 INFO  [TestNG-test-UI Tests-1] TestListener - START: CheckoutTest.checkoutWithMissingDetails [Missing first name]
+2026-10-04 13:55:50.773 INFO  [TestNG-test-UI Tests-1] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:52.069 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Locked out user]
+2026-10-04 13:55:52.070 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:56.035 INFO  [TestNG-test-UI Tests-4] TestListener - START: LoginTest.productsPageNeedsLogin
+2026-10-04 13:55:56.233 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username 'locked_out_user'
+2026-10-04 13:55:56.342 INFO  [TestNG-test-UI Tests-1] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:56.462 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Locked out user]
+2026-10-04 13:55:56.541 INFO  [TestNG-test-UI Tests-1] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:55:56.584 INFO  [TestNG-test-UI Tests-1] ReportManager - Open cart
+2026-10-04 13:55:56.619 INFO  [TestNG-test-UI Tests-1] ReportManager - Click Checkout
+2026-10-04 13:55:56.656 INFO  [TestNG-test-UI Tests-1] ReportManager - Enter customer details:  Doe, 560001
+2026-10-04 13:55:56.837 INFO  [TestNG-test-UI Tests-1] TestListener - PASS: CheckoutTest.checkoutWithMissingDetails [Missing first name]
+2026-10-04 13:55:57.218 INFO  [TestNG-test-UI Tests-4] TestListener - PASS: LoginTest.productsPageNeedsLogin
+2026-10-04 13:55:57.456 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Wrong password]
+2026-10-04 13:55:57.457 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:57.896 INFO  [TestNG-test-UI Tests-2] TestListener - START: LoginTest.validLogin
+2026-10-04 13:55:57.897 INFO  [TestNG-test-UI Tests-2] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:57.911 INFO  [TestNG-test-UI Tests-1] TestListener - START: CheckoutTest.checkoutWithMissingDetails [Missing last name]
+2026-10-04 13:55:57.911 INFO  [TestNG-test-UI Tests-1] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:58.256 INFO  [TestNG-test-UI Tests-4] TestListener - START: CartTest.addAndRemoveOnProductsPage
+2026-10-04 13:55:58.268 INFO  [TestNG-test-UI Tests-4] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:58.330 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:58.542 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Wrong password]
+2026-10-04 13:55:59.231 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Unknown user]
+2026-10-04 13:55:59.232 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:55:59.377 INFO  [TestNG-test-UI Tests-2] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:59.381 INFO  [TestNG-test-UI Tests-1] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:59.591 INFO  [TestNG-test-UI Tests-1] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:55:59.634 INFO  [TestNG-test-UI Tests-1] ReportManager - Open cart
+2026-10-04 13:55:59.634 INFO  [TestNG-test-UI Tests-2] TestListener - PASS: LoginTest.validLogin
+2026-10-04 13:55:59.684 INFO  [TestNG-test-UI Tests-1] ReportManager - Click Checkout
+2026-10-04 13:55:59.707 INFO  [TestNG-test-UI Tests-4] ReportManager - Login with username 'standard_user'
+2026-10-04 13:55:59.887 INFO  [TestNG-test-UI Tests-4] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:55:59.973 INFO  [TestNG-test-UI Tests-4] ReportManager - Remove 'Sauce Labs Backpack' from cart
+2026-10-04 13:56:00.019 INFO  [TestNG-test-UI Tests-4] TestListener - PASS: CartTest.addAndRemoveOnProductsPage
+2026-10-04 13:56:00.244 INFO  [TestNG-test-UI Tests-1] ReportManager - Enter customer details: John , 560001
+2026-10-04 13:56:00.352 INFO  [TestNG-test-UI Tests-2] TestListener - START: CartTest.cartShowsAddedProducts
+2026-10-04 13:56:00.364 INFO  [TestNG-test-UI Tests-2] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:00.762 INFO  [TestNG-test-UI Tests-4] TestListener - START: CartTest.removeProductFromCart
+2026-10-04 13:56:00.767 INFO  [TestNG-test-UI Tests-4] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:00.950 INFO  [TestNG-test-UI Tests-1] TestListener - PASS: CheckoutTest.checkoutWithMissingDetails [Missing last name]
+2026-10-04 13:56:01.423 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username 'unknown_user'
+2026-10-04 13:56:01.709 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Unknown user]
+2026-10-04 13:56:01.737 INFO  [TestNG-test-UI Tests-1] TestListener - START: CheckoutTest.checkoutWithMissingDetails [Missing postal code]
+2026-10-04 13:56:01.738 INFO  [TestNG-test-UI Tests-1] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:02.180 INFO  [TestNG-test-UI Tests-2] ReportManager - Login with username 'standard_user'
+2026-10-04 13:56:02.359 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Empty username]
+2026-10-04 13:56:02.360 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:02.511 INFO  [TestNG-test-UI Tests-2] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:56:02.547 INFO  [TestNG-test-UI Tests-2] ReportManager - Add 'Sauce Labs Bike Light' to cart
+2026-10-04 13:56:02.589 INFO  [TestNG-test-UI Tests-2] ReportManager - Open cart
+2026-10-04 13:56:02.611 INFO  [TestNG-test-UI Tests-4] ReportManager - Login with username 'standard_user'
+2026-10-04 13:56:02.687 INFO  [TestNG-test-UI Tests-2] TestListener - PASS: CartTest.cartShowsAddedProducts
+2026-10-04 13:56:02.803 INFO  [TestNG-test-UI Tests-4] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:56:03.159 INFO  [TestNG-test-UI Tests-1] ReportManager - Login with username 'standard_user'
+2026-10-04 13:56:03.276 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username ''
+2026-10-04 13:56:03.350 INFO  [TestNG-test-UI Tests-1] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:56:03.373 INFO  [TestNG-test-UI Tests-4] ReportManager - Add 'Sauce Labs Bike Light' to cart
+2026-10-04 13:56:03.391 INFO  [TestNG-test-UI Tests-1] ReportManager - Open cart
+2026-10-04 13:56:03.410 INFO  [TestNG-test-UI Tests-4] ReportManager - Open cart
+2026-10-04 13:56:03.432 INFO  [TestNG-test-UI Tests-1] ReportManager - Click Checkout
+2026-10-04 13:56:03.455 INFO  [TestNG-test-UI Tests-4] ReportManager - Remove 'Sauce Labs Bike Light' from cart
+2026-10-04 13:56:03.478 INFO  [TestNG-test-UI Tests-1] ReportManager - Enter customer details: John Doe, 
+2026-10-04 13:56:03.496 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Empty username]
+2026-10-04 13:56:03.522 INFO  [TestNG-test-UI Tests-4] TestListener - PASS: CartTest.removeProductFromCart
+2026-10-04 13:56:03.658 INFO  [TestNG-test-UI Tests-1] TestListener - PASS: CheckoutTest.checkoutWithMissingDetails [Missing postal code]
+2026-10-04 13:56:04.343 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Empty password]
+2026-10-04 13:56:04.343 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:04.389 INFO  [TestNG-test-UI Tests-1] TestListener - START: CheckoutTest.checkoutWithMissingDetails [All fields empty]
+2026-10-04 13:56:04.389 INFO  [TestNG-test-UI Tests-1] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:05.897 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username 'standard_user'
+2026-10-04 13:56:06.070 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Empty password]
+2026-10-04 13:56:06.134 INFO  [TestNG-test-UI Tests-1] ReportManager - Login with username 'standard_user'
+2026-10-04 13:56:06.299 INFO  [TestNG-test-UI Tests-1] ReportManager - Add 'Sauce Labs Backpack' to cart
+2026-10-04 13:56:06.344 INFO  [TestNG-test-UI Tests-1] ReportManager - Open cart
+2026-10-04 13:56:06.384 INFO  [TestNG-test-UI Tests-1] ReportManager - Click Checkout
+2026-10-04 13:56:06.424 INFO  [TestNG-test-UI Tests-1] ReportManager - Enter customer details:  , 
+2026-10-04 13:56:06.722 INFO  [TestNG-test-UI Tests-3] TestListener - START: LoginTest.invalidLogin [Username wrong case]
+2026-10-04 13:56:06.722 INFO  [TestNG-test-UI Tests-3] ReportManager - Open https://www.saucedemo.com
+2026-10-04 13:56:07.092 INFO  [TestNG-test-UI Tests-1] TestListener - PASS: CheckoutTest.checkoutWithMissingDetails [All fields empty]
+2026-10-04 13:56:07.471 INFO  [TestNG-test-UI Tests-3] ReportManager - Login with username 'STANDARD_USER'
+2026-10-04 13:56:07.655 INFO  [TestNG-test-UI Tests-3] TestListener - PASS: LoginTest.invalidLogin [Username wrong case]
+2026-10-04 13:56:07.879 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingApiTest.getBookingById
+2026-10-04 13:56:07.879 INFO  [TestNG-test-API Tests-2] TestListener - START: BookingApiTest.deleteBooking
+2026-10-04 13:56:07.879 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingApiTest.createBooking
+2026-10-04 13:56:07.879 INFO  [TestNG-test-API Tests-3] TestListener - START: BookingApiTest.getAllBookings
+2026-10-04 13:56:07.967 WARN  [TestNG-test-API Tests-2] TestListener - SKIP: BookingApiTest.deleteBooking
+2026-10-04 13:56:07.967 WARN  [TestNG-test-API Tests-1] TestListener - SKIP: BookingApiTest.createBooking
+2026-10-04 13:56:07.968 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingApiTest.createBooking
+2026-10-04 13:56:07.968 INFO  [TestNG-test-API Tests-2] TestListener - START: BookingApiTest.deleteBooking
+2026-10-04 13:56:09.239 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingApiTest.createBooking
+2026-10-04 13:56:09.240 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingApiTest.partialUpdateBooking
+2026-10-04 13:56:09.596 INFO  [TestNG-test-API Tests-3] TestListener - PASS: BookingApiTest.getAllBookings
+2026-10-04 13:56:09.597 INFO  [TestNG-test-API Tests-3] TestListener - START: BookingApiTest.updateBooking
+2026-10-04 13:56:09.952 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingApiTest.getBookingById
+2026-10-04 13:56:09.952 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.createBookingWithInvalidJson
+2026-10-04 13:56:10.700 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.createBookingWithInvalidJson
+2026-10-04 13:56:10.708 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.createBookingWithMissingFields [Empty body]
+2026-10-04 13:56:11.443 INFO  [TestNG-test-API Tests-2] TestListener - PASS: BookingApiTest.deleteBooking
+2026-10-04 13:56:11.444 INFO  [TestNG-test-API Tests-2] TestListener - START: BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]
+2026-10-04 13:56:11.444 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.createBookingWithMissingFields [Empty body]
+2026-10-04 13:56:11.445 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.createBookingWithMissingFields [Only first name]
+2026-10-04 13:56:11.701 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingApiTest.partialUpdateBooking
+2026-10-04 13:56:11.701 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingNegativeApiTest.getBookingWithInvalidId [999999999]
+2026-10-04 13:56:12.212 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.createBookingWithMissingFields [Only first name]
+2026-10-04 13:56:12.212 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]
+2026-10-04 13:56:12.455 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingNegativeApiTest.getBookingWithInvalidId [999999999]
+2026-10-04 13:56:12.456 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingNegativeApiTest.getBookingWithInvalidId [0]
+2026-10-04 13:56:12.954 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.createBookingWithMissingFields [Missing booking dates]
+2026-10-04 13:56:12.955 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]
+2026-10-04 13:56:13.293 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingNegativeApiTest.getBookingWithInvalidId [0]
+2026-10-04 13:56:13.294 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingNegativeApiTest.getBookingWithInvalidId [-1]
+2026-10-04 13:56:13.812 INFO  [TestNG-test-API Tests-2] TestListener - PASS: BookingNegativeApiTest.deleteWithInvalidToken [wrong-token-123]
+2026-10-04 13:56:13.813 INFO  [TestNG-test-API Tests-2] TestListener - START: BookingNegativeApiTest.deleteWithInvalidToken []
+2026-10-04 13:56:13.813 INFO  [TestNG-test-API Tests-3] TestListener - PASS: BookingApiTest.updateBooking
+2026-10-04 13:56:13.820 INFO  [TestNG-test-API Tests-3] TestListener - START: AuthApiTest.createTokenWithInvalidCredentials [Wrong password]
+2026-10-04 13:56:14.107 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingNegativeApiTest.getBookingWithInvalidId [-1]
+2026-10-04 13:56:14.108 INFO  [TestNG-test-API Tests-1] TestListener - START: BookingNegativeApiTest.getBookingWithInvalidId [abc]
+2026-10-04 13:56:14.706 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.updateWithInvalidToken [wrong-token-123]
+2026-10-04 13:56:14.706 INFO  [TestNG-test-API Tests-4] TestListener - START: BookingNegativeApiTest.updateWithInvalidToken []
+2026-10-04 13:56:14.713 INFO  [TestNG-test-API Tests-3] TestListener - PASS: AuthApiTest.createTokenWithInvalidCredentials [Wrong password]
+2026-10-04 13:56:14.713 INFO  [TestNG-test-API Tests-3] TestListener - START: AuthApiTest.createTokenWithInvalidCredentials [Unknown user]
+2026-10-04 13:56:14.972 INFO  [TestNG-test-API Tests-1] TestListener - PASS: BookingNegativeApiTest.getBookingWithInvalidId [abc]
+2026-10-04 13:56:14.973 INFO  [TestNG-test-API Tests-1] TestListener - START: AuthApiTest.createTokenWithValidCredentials
+2026-10-04 13:56:15.561 INFO  [TestNG-test-API Tests-3] TestListener - PASS: AuthApiTest.createTokenWithInvalidCredentials [Unknown user]
+2026-10-04 13:56:15.562 INFO  [TestNG-test-API Tests-3] TestListener - START: AuthApiTest.createTokenWithInvalidCredentials [Missing password]
+2026-10-04 13:56:15.811 INFO  [TestNG-test-API Tests-1] TestListener - PASS: AuthApiTest.createTokenWithValidCredentials
+2026-10-04 13:56:16.302 INFO  [TestNG-test-API Tests-2] TestListener - PASS: BookingNegativeApiTest.deleteWithInvalidToken []
+2026-10-04 13:56:16.302 INFO  [TestNG-test-API Tests-4] TestListener - PASS: BookingNegativeApiTest.updateWithInvalidToken []
+2026-10-04 13:56:16.322 INFO  [TestNG-test-API Tests-3] TestListener - PASS: AuthApiTest.createTokenWithInvalidCredentials [Missing password]
+2026-10-04 13:56:16.323 INFO  [TestNG-test-API Tests-3] TestListener - START: AuthApiTest.createTokenWithInvalidCredentials [Empty body]
+2026-10-04 13:56:17.072 INFO  [TestNG-test-API Tests-3] TestListener - PASS: AuthApiTest.createTokenWithInvalidCredentials [Empty body]
